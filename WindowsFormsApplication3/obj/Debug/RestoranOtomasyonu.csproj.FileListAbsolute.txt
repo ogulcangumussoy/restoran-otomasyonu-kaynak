@@ -1,0 +1,28 @@
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe.config
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmGiris.resources
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\RestoranOtomasyonu.csproj.GenerateResource.Cache
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.exe
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.pdb
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\MySql.Data.dll
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\MySql.Data.xml
+c:\users\ogulcan\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\RestoranOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\Ogulcan\Documents\Visual Studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmMenu.resources
+C:\Users\Ogulcan\Documents\Visual Studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmSiparis.resources
+C:\Users\Ogulcan\Documents\Visual Studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmMasalar.resources
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe.config
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.exe
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.pdb
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\MySql.Data.dll
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\MySql.Data.xml
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\RestoranOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmGiris.resources
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmMasalar.resources
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmMenu.resources
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmSiparis.resources
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\RestoranOtomasyonu.csproj.GenerateResource.Cache
