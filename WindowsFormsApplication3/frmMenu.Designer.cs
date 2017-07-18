@@ -46,7 +46,7 @@
             this.btnMasaSiparis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMasaSiparis.BackgroundImage")));
             this.btnMasaSiparis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMasaSiparis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMasaSiparis.Location = new System.Drawing.Point(422, 253);
+            this.btnMasaSiparis.Location = new System.Drawing.Point(341, 214);
             this.btnMasaSiparis.Name = "btnMasaSiparis";
             this.btnMasaSiparis.Size = new System.Drawing.Size(273, 128);
             this.btnMasaSiparis.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.btnRezervasyon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRezervasyon.BackgroundImage")));
             this.btnRezervasyon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRezervasyon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRezervasyon.Location = new System.Drawing.Point(719, 253);
+            this.btnRezervasyon.Location = new System.Drawing.Point(638, 214);
             this.btnRezervasyon.Name = "btnRezervasyon";
             this.btnRezervasyon.Size = new System.Drawing.Size(132, 128);
             this.btnRezervasyon.TabIndex = 0;
@@ -71,7 +71,7 @@
             this.btnPaketServis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPaketServis.BackgroundImage")));
             this.btnPaketServis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPaketServis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPaketServis.Location = new System.Drawing.Point(857, 253);
+            this.btnPaketServis.Location = new System.Drawing.Point(776, 214);
             this.btnPaketServis.Name = "btnPaketServis";
             this.btnPaketServis.Size = new System.Drawing.Size(136, 128);
             this.btnPaketServis.TabIndex = 0;
@@ -84,7 +84,7 @@
             this.btnMusteriler.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMusteriler.BackgroundImage")));
             this.btnMusteriler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMusteriler.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMusteriler.Location = new System.Drawing.Point(422, 386);
+            this.btnMusteriler.Location = new System.Drawing.Point(341, 347);
             this.btnMusteriler.Name = "btnMusteriler";
             this.btnMusteriler.Size = new System.Drawing.Size(132, 128);
             this.btnMusteriler.TabIndex = 0;
@@ -97,7 +97,7 @@
             this.btnKasaIslemleri.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnKasaIslemleri.BackgroundImage")));
             this.btnKasaIslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnKasaIslemleri.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnKasaIslemleri.Location = new System.Drawing.Point(560, 386);
+            this.btnKasaIslemleri.Location = new System.Drawing.Point(479, 347);
             this.btnKasaIslemleri.Name = "btnKasaIslemleri";
             this.btnKasaIslemleri.Size = new System.Drawing.Size(135, 128);
             this.btnKasaIslemleri.TabIndex = 0;
@@ -110,7 +110,7 @@
             this.btnMutfak.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMutfak.BackgroundImage")));
             this.btnMutfak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMutfak.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMutfak.Location = new System.Drawing.Point(719, 386);
+            this.btnMutfak.Location = new System.Drawing.Point(638, 347);
             this.btnMutfak.Name = "btnMutfak";
             this.btnMutfak.Size = new System.Drawing.Size(274, 128);
             this.btnMutfak.TabIndex = 0;
@@ -123,7 +123,7 @@
             this.btnRaporlar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRaporlar.BackgroundImage")));
             this.btnRaporlar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRaporlar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRaporlar.Location = new System.Drawing.Point(422, 520);
+            this.btnRaporlar.Location = new System.Drawing.Point(341, 481);
             this.btnRaporlar.Name = "btnRaporlar";
             this.btnRaporlar.Size = new System.Drawing.Size(132, 128);
             this.btnRaporlar.TabIndex = 0;
@@ -136,7 +136,7 @@
             this.btnAyarlar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAyarlar.BackgroundImage")));
             this.btnAyarlar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAyarlar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAyarlar.Location = new System.Drawing.Point(560, 520);
+            this.btnAyarlar.Location = new System.Drawing.Point(479, 481);
             this.btnAyarlar.Name = "btnAyarlar";
             this.btnAyarlar.Size = new System.Drawing.Size(135, 128);
             this.btnAyarlar.TabIndex = 0;
@@ -149,7 +149,7 @@
             this.btnKilit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnKilit.BackgroundImage")));
             this.btnKilit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnKilit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnKilit.Location = new System.Drawing.Point(719, 520);
+            this.btnKilit.Location = new System.Drawing.Point(638, 481);
             this.btnKilit.Name = "btnKilit";
             this.btnKilit.Size = new System.Drawing.Size(132, 128);
             this.btnKilit.TabIndex = 0;
@@ -162,7 +162,7 @@
             this.btnCikis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCikis.BackgroundImage")));
             this.btnCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCikis.Location = new System.Drawing.Point(857, 520);
+            this.btnCikis.Location = new System.Drawing.Point(776, 481);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(132, 128);
             this.btnCikis.TabIndex = 0;

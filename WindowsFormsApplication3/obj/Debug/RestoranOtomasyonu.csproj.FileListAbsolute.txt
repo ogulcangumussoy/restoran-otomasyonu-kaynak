@@ -26,3 +26,16 @@ C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\Window
 C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmSiparis.resources
 C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
 C:\Users\Ogulcan\Desktop\GumussoyYazilim\RestoranProjem\Asama6-9Aralik-2-\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\RestoranOtomasyonu.csproj.GenerateResource.Cache
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe.config
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.exe
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.pdb
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\bin\Debug\MySql.Data.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\obj\Debug\RestoranOtomasyonu.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmGiris.resources
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmMasalar.resources
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmMenu.resources
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmSiparis.resources
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+\\Mac\Home\Documents\Visual Studio 2015\Projects\restoran-otomasyonu-kaynak\WindowsFormsApplication3\obj\Debug\RestoranOtomasyonu.csproj.GenerateResource.Cache

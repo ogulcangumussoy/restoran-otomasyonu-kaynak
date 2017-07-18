@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using MySql.Data;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApplication3
 {
@@ -25,66 +26,56 @@ namespace WindowsFormsApplication3
             {
                 return _ID;
             }
-
             set
             {
                 _ID = value;
             }
         }
-
         public int KAPASITE
         {
             get
             {
                 return _KAPASITE;
             }
-
             set
             {
                 _KAPASITE = value;
             }
         }
-
         public int SERVISTURU
         {
             get
             {
                 return _SERVISTURU;
             }
-
             set
             {
                 _SERVISTURU = value;
             }
         }
-
         public int DURUM
         {
             get
             {
                 return _DURUM;
             }
-
             set
             {
                 _DURUM = value;
             }
         }
-
         public int ONAY
         {
             get
             {
                 return _ONAY;
             }
-
             set
             {
                 _ONAY = value;
             }
         }
         #endregion
-
         cGenel gnl = new cGenel();
         public int TableGetbyNumber (string TableValue)
         {
@@ -95,54 +86,30 @@ namespace WindowsFormsApplication3
         public bool TableGetbyState(int ButtonName, int State)
         {
             bool result = false;
-            MySqlConnection con = new MySqlConnection("Server=localhost;Database=itadakimasu;Uid=root;Pwd='';");
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand("Select durum from Masalar where Id=@TableId and DURUM=@state", con);
-
-            cmd.Parameters.Add("@TableId", MySqlDbType.Int32).Value = ButtonName;
-            cmd.Parameters.Add("Qstate", MySqlDbType.Int32).Value = State;
-            try
-            {
-                if(con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
+            gnl.bagac();           
+            SqlCommand cmd = new SqlCommand("Select durum from Masalar where Id=@TableId and DURUM=@state", gnl.bagac());
+            cmd.Parameters.Add("@TableId", SqlDbType.BigInt).Value = ButtonName;
+            cmd.Parameters.Add("@state", SqlDbType.BigInt).Value = State;           
                 result = Convert.ToBoolean(cmd.ExecuteScalar());
-            }
-            catch(MySqlException ex)
-            {
-                string hata = ex.Message;
-            }
-            finally
-            {
-                con.Dispose();
-                con.Close();
-            
-            }
+            gnl.bagkapat();          
             return result;
         }
         public string SessionSum(int State)
         {
             string dt = "";
-            MySqlConnection con = new MySqlConnection("Server=localhost;Database=itadakimasu;Uid=root;Pwd='';");
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand("Select Tarih,MasaId From adisyonlar Right Join masalar on adisyonlar.MasaId=masalar.ID where masalar.DURUM=@durum and adisyonlar.Durum=0",con);
-            MySqlDataReader dr = null;
-            cmd.Parameters.Add("@durum", MySqlDbType.Int32).Value = State;
-
+            gnl.bagac();
+            SqlCommand cmd = new SqlCommand("Select Tarih,MasaId From adisyonlar Right Join masalar on adisyonlar.MasaId=masalar.ID where masalar.DURUM=@durum and adisyonlar.Durum=0",gnl.bagac());
+            SqlDataReader dr = null;
+            cmd.Parameters.Add("@durum", SqlDbType.BigInt).Value = State;
             try
-            {
-                if(con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
+            {   
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                     {
                     dt = Convert.ToDateTime(dr["Tarih"]).ToString();
                 }
             }
-            catch(MySqlException ex)
+            catch(SqlException ex)
             {
                 string hata = ex.Message;
                 throw;
@@ -150,8 +117,8 @@ namespace WindowsFormsApplication3
             finally
             {
                 dr.Close();
-                con.Dispose();
-                con.Close();
+                gnl.bag.Dispose();
+                gnl.bagkapat();
             }
             return dt;
         }

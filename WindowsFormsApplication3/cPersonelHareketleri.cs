@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Data.SqlClient;
+
 namespace WindowsFormsApplication3
 {
     class cPersonelHareketleri
@@ -88,27 +90,19 @@ namespace WindowsFormsApplication3
         public bool PersonelActionSave(cPersonelHareketleri ph)
         {
             bool result = false;
-            MySqlConnection con = new MySqlConnection("Server = localhost; Database = itadakimasu; Uid = root; Pwd = ''");
-            MySqlCommand mcd = new MySqlCommand("Insert Into personelhareketleri(PERSONELID,ISLEM,TARIH)Values(@personelId,@islem,@tarih)",con);
+            gnl.bagac();
 
-            try
-            {
-                if (con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
-                mcd.Parameters.Add("@personelId", MySqlDbType.Int16).Value = ph.PersonelId;
-                mcd.Parameters.Add("@islem", MySqlDbType.VarChar).Value = ph.Islem;
-                mcd.Parameters.Add("@tarih",MySqlDbType.DateTime).Value= ph.Tarih;
+            //MySqlConnection con = new MySqlConnection("Server = localhost; Database = itadakimasu; Uid = root; Pwd = ''");
+            SqlCommand mcd = new SqlCommand("Insert Into personelhareketleri(PERSONELID,ISLEM,TARIH)Values(@personelId,@islem,@tarih)", gnl.bagac());
+            //MySqlCommand mcd = new MySqlCommand("Insert Into personelhareketleri(PERSONELID,ISLEM,TARIH)Values(@personelId,@islem,@tarih)",con);
+
+           
+                mcd.Parameters.Add("@personelId", SqlDbType.BigInt).Value = ph.PersonelId;
+                mcd.Parameters.Add("@islem", SqlDbType.VarChar).Value = ph.Islem;
+                mcd.Parameters.Add("@tarih",SqlDbType.DateTime).Value= ph.Tarih;
                 result = Convert.ToBoolean(mcd.ExecuteNonQuery());
                 
-            }
-            catch (MySqlException ex)
-            {
-                string hata = ex.Message;
-                throw;
-            }
-
+            
             return result;
         }
     }

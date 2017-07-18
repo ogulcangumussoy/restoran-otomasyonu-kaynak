@@ -42,7 +42,6 @@
             this.lvMenu = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lvSiparisler = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -218,8 +217,7 @@
             // 
             this.lvMenu.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader2});
             this.lvMenu.FullRowSelect = true;
             this.lvMenu.GridLines = true;
             this.lvMenu.Location = new System.Drawing.Point(6, 25);
@@ -240,11 +238,6 @@
             // 
             this.columnHeader2.Text = "Ürün Fiyatı";
             this.columnHeader2.Width = 149;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Ürün No";
-            this.columnHeader3.Width = 126;
             // 
             // groupBox3
             // 
@@ -375,7 +368,7 @@
             this.btnOdeme.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOdeme.Location = new System.Drawing.Point(979, 560);
             this.btnOdeme.Name = "btnOdeme";
-            this.btnOdeme.Size = new System.Drawing.Size(163, 73);
+            this.btnOdeme.Size = new System.Drawing.Size(134, 73);
             this.btnOdeme.TabIndex = 25;
             this.btnOdeme.UseVisualStyleBackColor = true;
             this.btnOdeme.Click += new System.EventHandler(this.button1_Click_1);
@@ -386,20 +379,21 @@
             this.btnSiparis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSiparis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSiparis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSiparis.Location = new System.Drawing.Point(1150, 560);
+            this.btnSiparis.Location = new System.Drawing.Point(1125, 560);
             this.btnSiparis.Name = "btnSiparis";
-            this.btnSiparis.Size = new System.Drawing.Size(163, 73);
+            this.btnSiparis.Size = new System.Drawing.Size(142, 73);
             this.btnSiparis.TabIndex = 26;
             this.btnSiparis.UseVisualStyleBackColor = true;
+            this.btnSiparis.Click += new System.EventHandler(this.btnSiparis_Click);
             // 
             // btnIptal
             // 
             this.btnIptal.BackgroundImage = global::WindowsFormsApplication3.Properties.Resources.iptal_logo;
             this.btnIptal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIptal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnIptal.Location = new System.Drawing.Point(1077, 649);
+            this.btnIptal.Location = new System.Drawing.Point(1058, 649);
             this.btnIptal.Name = "btnIptal";
-            this.btnIptal.Size = new System.Drawing.Size(163, 73);
+            this.btnIptal.Size = new System.Drawing.Size(144, 73);
             this.btnIptal.TabIndex = 27;
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
@@ -568,7 +562,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApplication3.Properties.Resources.arkaplan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1333, 748);
+            this.ClientSize = new System.Drawing.Size(1300, 748);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btnTemizle);
             this.Controls.Add(this.btn3);
@@ -623,7 +617,6 @@
         private System.Windows.Forms.ListView lvMenu;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListView lvSiparisler;
         private System.Windows.Forms.ColumnHeader columnHeader4;

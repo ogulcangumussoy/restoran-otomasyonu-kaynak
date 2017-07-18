@@ -7,7 +7,7 @@ using System.Data;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 
 namespace WindowsFormsApplication3
 {
@@ -28,52 +28,44 @@ namespace WindowsFormsApplication3
             {
                 return _Id;
             }
-
             set
             {
                 _Id = value;
             }
         }
-
         public int AdisyonID
         {
             get
             {
                 return _adisyonID;
             }
-
             set
             {
                 _adisyonID = value;
             }
         }
-
         public int UrunId
         {
             get
             {
                 return _urunId;
             }
-
             set
             {
                 _urunId = value;
             }
         }
-
         public int Adet
         {
             get
             {
                 return _adet;
             }
-
             set
             {
                 _adet = value;
             }
         }
-
         public int MasaId
         {
             get
@@ -87,23 +79,13 @@ namespace WindowsFormsApplication3
             }
         } 
         #endregion
-
         // Siparişleri Getir.
-
         public void getByOrder(ListView lv,int AdisyonId)
         {
-            MySqlConnection con = new MySqlConnection("Server=localhost; Database=itadakimasu;Uid=root;Pwd='';");
-            con.Open();
-            MySqlCommand cmd= new MySqlCommand("Select URUNAD,FIYAT,Satislar.ID,Satislar.URUNID,satislar.ADET from satislar Inner Join urunler on Satislar.URUNID=Urunler.ID Where ADISYONID=@AdisyonId", con);
-            MySqlDataReader dr = null;
-            cmd.Parameters.Add("@AdisyonId",MySqlDbType.Int32).Value= AdisyonId;
-
-            try
-            {
-                if (con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
+            gnl.bagac();
+            SqlCommand cmd= new SqlCommand("Select URUNAD,FIYAT,Satislar.ID,Satislar.URUNID,satislar.ADET from satislar Inner Join urunler on Satislar.URUNID=Urunler.ID Where ADISYONID=@AdisyonId", gnl.bagac());
+            SqlDataReader dr = null;
+            cmd.Parameters.Add("@AdisyonId",SqlDbType.BigInt).Value= AdisyonId;               
                 dr = cmd.ExecuteReader();
                 int sayac = 0;
                 while (dr.Read())
@@ -113,16 +95,8 @@ namespace WindowsFormsApplication3
                     lv.Items[sayac].SubItems.Add(dr["URUNID"].ToString());
                     lv.Items[sayac].SubItems.Add(Convert.ToString(Convert.ToDecimal(dr["FIYAT"]) * Convert.ToDecimal(dr["ADET"])));
                     lv.Items[sayac].SubItems.Add(dr["ID"].ToString());
-
                     sayac++;
                 }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using MySql.Data;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApplication3
 {
@@ -22,14 +23,9 @@ namespace WindowsFormsApplication3
 
         private void frmMasalar_Load(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection("Server=localhost;Database=itadakimasu;Uid=root;Pwd='';");
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand("Select DURUM,ID from Masalar", con);
-            MySqlDataReader dr = null;
-            if (con.State == ConnectionState.Closed)
-            {
-                con.Open();
-            }
+            gnl.bagac();
+            SqlCommand cmd = new SqlCommand("Select DURUM,ID from Masalar", gnl.bagac());
+            SqlDataReader dr = null;            
             dr = cmd.ExecuteReader();
             while (dr.Read())
             {
@@ -48,24 +44,19 @@ namespace WindowsFormsApplication3
                             DateTime dt2 = DateTime.Now;
                             string st1 = Convert.ToDateTime(ms.SessionSum(2)).ToShortTimeString();
                             string st2 = DateTime.Now.ToShortTimeString();
-
                             DateTime t1 = dt1.AddMinutes(DateTime.Parse(st1).TimeOfDay.TotalMinutes);
                             DateTime t2 = dt2.AddMinutes(DateTime.Parse(st2).TimeOfDay.TotalMinutes);
-
                             var fark = t2 - t1;
-
                                   item.Text = 
                                   String.Format("{0}{1}{2}",
                                   fark.Days > 0 ? string.Format("{0} Gün", fark.Days) : "",
                                   fark.Hours > 0 ? string.Format("{0} Saat", fark.Hours) : "",
                                   fark.Minutes > 0 ? string.Format("{0} Dakika", fark.Minutes) : "").Trim() + "\n\n\nMasa"+ dr["ID"].ToString() ;
-
                             item.BackgroundImage = (Image)(Properties.Resources.masaDolu);
                         }
                         else if(item.Name == "btnMasa" + dr["ID"].ToString() && dr["DURUM"].ToString() == "3")
                         {
                             item.BackgroundImage = (Image)(Properties.Resources.masaAcik);
-
                         }
                         else if (item.Name == "btnMasa" + dr["ID"].ToString() && dr["DURUM"].ToString() == "4")
                         {
@@ -75,6 +66,7 @@ namespace WindowsFormsApplication3
                     }
                 }
             }
+            
         }
         #region ClickEvent
         private void btnMasa1_Click(object sender, EventArgs e)

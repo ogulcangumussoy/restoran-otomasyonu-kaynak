@@ -43,7 +43,7 @@
             this.cbKullanici.BackColor = System.Drawing.SystemColors.ControlLight;
             this.cbKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cbKullanici.FormattingEnabled = true;
-            this.cbKullanici.Location = new System.Drawing.Point(849, 254);
+            this.cbKullanici.Location = new System.Drawing.Point(605, 375);
             this.cbKullanici.Name = "cbKullanici";
             this.cbKullanici.Size = new System.Drawing.Size(230, 32);
             this.cbKullanici.TabIndex = 0;
@@ -55,7 +55,7 @@
             this.tbMetin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbMetin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tbMetin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tbMetin.Location = new System.Drawing.Point(849, 311);
+            this.tbMetin.Location = new System.Drawing.Point(605, 432);
             this.tbMetin.Multiline = true;
             this.tbMetin.Name = "tbMetin";
             this.tbMetin.Size = new System.Drawing.Size(230, 32);
@@ -68,7 +68,7 @@
             this.lbAd.AutoSize = true;
             this.lbAd.BackColor = System.Drawing.Color.Transparent;
             this.lbAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbAd.Location = new System.Drawing.Point(705, 254);
+            this.lbAd.Location = new System.Drawing.Point(461, 375);
             this.lbAd.Name = "lbAd";
             this.lbAd.Size = new System.Drawing.Size(106, 20);
             this.lbAd.TabIndex = 3;
@@ -79,7 +79,7 @@
             this.lbSifre.AutoSize = true;
             this.lbSifre.BackColor = System.Drawing.Color.Transparent;
             this.lbSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbSifre.Location = new System.Drawing.Point(705, 311);
+            this.lbSifre.Location = new System.Drawing.Point(461, 432);
             this.lbSifre.Name = "lbSifre";
             this.lbSifre.Size = new System.Drawing.Size(47, 20);
             this.lbSifre.TabIndex = 3;
@@ -89,7 +89,7 @@
             // 
             this.btnImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImage.BackgroundImage")));
             this.btnImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnImage.Location = new System.Drawing.Point(793, 80);
+            this.btnImage.Location = new System.Drawing.Point(549, 201);
             this.btnImage.Name = "btnImage";
             this.btnImage.Size = new System.Drawing.Size(286, 153);
             this.btnImage.TabIndex = 2;
@@ -100,7 +100,7 @@
             this.btnCikisyap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCikisyap.BackgroundImage")));
             this.btnCikisyap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCikisyap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCikisyap.Location = new System.Drawing.Point(1021, 363);
+            this.btnCikisyap.Location = new System.Drawing.Point(777, 484);
             this.btnCikisyap.Name = "btnCikisyap";
             this.btnCikisyap.Size = new System.Drawing.Size(58, 60);
             this.btnCikisyap.TabIndex = 4;
@@ -112,7 +112,7 @@
             this.btnGiris.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGiris.BackgroundImage")));
             this.btnGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGiris.Location = new System.Drawing.Point(860, 363);
+            this.btnGiris.Location = new System.Drawing.Point(616, 484);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(155, 60);
             this.btnGiris.TabIndex = 5;

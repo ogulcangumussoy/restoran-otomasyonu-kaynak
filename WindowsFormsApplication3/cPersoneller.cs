@@ -7,6 +7,7 @@ using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApplication3
 {
@@ -30,7 +31,6 @@ namespace WindowsFormsApplication3
             {
                 return _PersonelId;
             }
-
             set
             {
                 _PersonelId = value;
@@ -42,7 +42,6 @@ namespace WindowsFormsApplication3
             {
                 return _PersonelGorevId;
             }
-
             set
             {
                 _PersonelGorevId = value;
@@ -54,7 +53,6 @@ namespace WindowsFormsApplication3
             {
                 return _PersonelAd;
             }
-
             set
             {
                 _PersonelAd = value;
@@ -67,7 +65,6 @@ namespace WindowsFormsApplication3
             {
                 return _PersonelSoyad;
             }
-
             set
             {
                 _PersonelSoyad = value;
@@ -80,7 +77,6 @@ namespace WindowsFormsApplication3
             {
                 return _PersonelParola;
             }
-
             set
             {
                 _PersonelParola = value;
@@ -93,7 +89,6 @@ namespace WindowsFormsApplication3
             {
                 return _PersonelKullaniciAdi;
             }
-
             set
             {
                 _PersonelKullaniciAdi = value;
@@ -106,55 +101,30 @@ namespace WindowsFormsApplication3
             {
                 return _PersonelDurum;
             }
-
             set
             {
                 _PersonelDurum = value;
             }
         }
         #endregion
-
         public bool personelEntryControl(string password, int userId)
-        {
-
+        {            
             bool result = false;
-
-            MySqlConnection con = new MySqlConnection("Server=localhost;Database=itadakimasu;Uid=root;Pwd='';");
-            con.Open();
-            MySqlCommand mcd = new MySqlCommand("Select * from personeller where ID=@Id and PAROLA=@password", con);
-            mcd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = userId;
-            mcd.Parameters.Add("@password", MySqlDbType.VarChar).Value = password;
-
-            try
-            {
-                if (con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
-                result = Convert.ToBoolean(mcd.ExecuteScalar());
-            }
-            catch (Exception ex)
-            {
-                string hata = ex.Message;
-                throw;
-            }
-
+            gnl.bagac();
+            DataTable dt = new DataTable();
+            SqlCommand sda = new SqlCommand("Select * from personeller where ID = @Id and PAROLA = @password", gnl.bagac());
+            sda.Parameters.Add("@Id", SqlDbType.VarChar).Value = userId;
+            sda.Parameters.Add("@password", SqlDbType.VarChar).Value = password;
+            sda.ExecuteScalar();
+            result = Convert.ToBoolean(sda.ExecuteScalar());
             return result;
         }
         public void personelGetbyInformation(ComboBox cb)
         {
             cb.Items.Clear();
-            MySqlConnection con = new MySqlConnection("Server = localhost; Database = itadakimasu; Uid = root; Pwd = ''");
-            con.Open();
-            MySqlCommand mcd = new MySqlCommand("Select * from personeller", con);
-
-
-            if (con.State == ConnectionState.Closed)
-            {
-                con.Open();
-            }
-            MySqlDataReader dr = mcd.ExecuteReader();
-
+            gnl.bagac();
+            SqlCommand mcd = new SqlCommand("Select * from personeller", gnl.bagac());
+            SqlDataReader dr = mcd.ExecuteReader();
             while (dr.Read())
             {
                 cPersoneller p = new cPersoneller();
@@ -166,19 +136,13 @@ namespace WindowsFormsApplication3
                 p.PersonelKullaniciAdi = Convert.ToString(dr["KULLANICIADI"]);
                 p.PersonelDurum = Convert.ToString(dr["DURUM"]);
                 cb.Items.Add(p);
-
             }
             dr.Close();
-            con.Close();
-
-
-
+            gnl.bagkapat();
         }
         public override string ToString()
         {
             return PersonelAd + " " + PersonelSoyad;
         }
-
-
     }
 }
